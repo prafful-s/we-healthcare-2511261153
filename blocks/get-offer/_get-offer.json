@@ -1,0 +1,97 @@
+{
+  "definitions": [
+    {
+      "title": "Get Offer",
+      "id": "get-offer",
+      "plugins": {
+        "xwalk": {
+          "page": {
+            "resourceType": "core/franklin/components/block/v1/block",
+            "template": {
+              "name": "Get Offer",
+              "model": "get-offer"
+            }
+          }
+        }
+      }
+    }
+  ],
+  "models": [
+    {
+      "id": "get-offer",
+      "fields": [
+        {
+          "component": "tab",
+          "label": "Basic",
+          "name": "basic"
+        },
+        {
+          "component": "text",
+          "name": "form-title",
+          "label": "Form Title",
+          "valueType": "string",
+          "description": "Heading displayed at the top of the form in the mobile app. Leave empty for no heading."
+        },
+        {
+          "component": "text",
+          "name": "placeholder",
+          "label": "Placeholder",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "button-label",
+          "label": "Button Label",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "toast-message",
+          "label": "Success Toast Message",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "name": "buttoneventtype",
+          "label": "Button Event Type",
+          "value": "",
+          "valueType": "string",
+          "description": "Launch/Analytics event fired when the Get Offer button is clicked"
+        },
+        {
+          "component": "text",
+          "name": "custom-class",
+          "label": "Custom class",
+          "value": "",
+          "valueType": "string",
+          "description": "Space-separated class names to add to the block"
+        },
+        {
+          "component": "tab",
+          "label": "Mobile Specific",
+          "name": "mobileSpecific"
+        },
+        {
+          "component": "text",
+          "name": "mobilebuttoneventtype",
+          "label": "Mobile Button Event Type",
+          "value": "",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "custommobilestyle",
+          "label": "Custom Mobile Style",
+          "value": "",
+          "multi": true,
+          "description": "Custom styles for the form on mobile"
+        }
+      ]
+    }
+  ],
+  "filters": []
+}
